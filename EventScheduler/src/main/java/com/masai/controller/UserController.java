@@ -18,7 +18,7 @@ import com.masai.exception.LoginException;
 import com.masai.exception.UserException;
 import com.masai.model.Event;
 import com.masai.model.Customer;
-import com.masai.service.UserService;
+import com.masai.service.CustomerService;
 
 import jakarta.validation.Valid;
 
@@ -27,12 +27,12 @@ import jakarta.validation.Valid;
 public class UserController {
 	
 	@Autowired
-	UserService userService;
+	CustomerService customerService;
 	
 	@PostMapping("/register")
 	public ResponseEntity<Customer> register(@Valid @RequestBody Customer u) throws UserException{
 
-		u = userService.registerUser(u);
+		u = customerService.registerUser(u);
 		return new ResponseEntity<>(u, HttpStatus.CREATED);
 		
 	}
@@ -40,7 +40,7 @@ public class UserController {
 	@GetMapping("/month_events")
 	public ResponseEntity<List<Event>> viewByMonth(@PathVariable("key") String key) throws UserException, LoginException, EventException{
 		
-		List<Event> events = userService.viewEvents("month");
+		List<Event> events = customerService.viewEvents("month");
 		return new ResponseEntity<>(events, HttpStatus.OK);
 		
 	}
@@ -48,7 +48,7 @@ public class UserController {
 	@GetMapping("/week_events")
 	public ResponseEntity<List<Event>> viewByWeek(@PathVariable("key") String key) throws UserException, LoginException, EventException{
 		
-		List<Event> events = userService.viewEvents("week");
+		List<Event> events = customerService.viewEvents("week");
 		return new ResponseEntity<>(events, HttpStatus.OK);
 		
 	}
@@ -56,7 +56,7 @@ public class UserController {
 	@GetMapping("/day_events")
 	public ResponseEntity<List<Event>> viewByDay() throws UserException, LoginException, EventException{
 		
-		List<Event> events = userService.viewEvents("day");
+		List<Event> events = customerService.viewEvents("day");
 		return new ResponseEntity<>(events, HttpStatus.OK);
 		
 	}
@@ -64,7 +64,7 @@ public class UserController {
 	@PutMapping("/updateUser")
 	public ResponseEntity<Customer> viewByMonth(@Valid @RequestBody Customer u) throws UserException, LoginException, EventException{
 		
-		Customer customer = userService.updateUser(u);
+		Customer customer = customerService.updateUser(u);
 		return new ResponseEntity<>(customer, HttpStatus.OK);
 		
 	}

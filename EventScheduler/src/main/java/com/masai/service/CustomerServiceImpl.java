@@ -15,7 +15,7 @@ import com.masai.model.Event;
 import com.masai.repository.UserRepo;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class CustomerServiceImpl implements CustomerService{
 
 	@Autowired
 	UserRepo userRepo;

@@ -7,7 +7,7 @@ import com.masai.exception.UserException;
 import com.masai.model.Event;
 import com.masai.model.Customer;
 
-public interface UserService {
+public interface CustomerService {
 
 	public Customer registerUser(Customer customer) throws UserException;
 	
