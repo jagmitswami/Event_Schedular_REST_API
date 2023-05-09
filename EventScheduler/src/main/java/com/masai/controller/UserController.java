@@ -23,7 +23,7 @@ import com.masai.service.UserService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/eventschedular/user")
+@RequestMapping("/eventscheduler/user")
 public class UserController {
 	
 	@Autowired

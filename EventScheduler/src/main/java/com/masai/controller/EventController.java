@@ -18,7 +18,7 @@ import com.masai.service.EventService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/eventschedular/event")
+@RequestMapping("/eventscheduler/event")
 public class EventController {
 	
 	@Autowired
