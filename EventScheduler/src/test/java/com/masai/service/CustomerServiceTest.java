@@ -1,5 +1,8 @@
 package com.masai.service;
 
-public class CustomerServiceTest {
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
+public class CustomerServiceTest {
+	
 }

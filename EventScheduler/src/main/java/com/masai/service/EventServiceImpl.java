@@ -90,7 +90,6 @@ public class EventServiceImpl implements EventService{
 			throw new EventException("Event already planned for this timing");
 		}
 		
-		event.setEventId(eventId);
 		event = eventRepo.save(event);
 		
 		customer.getEvents().add(event);
