@@ -1,4 +1,4 @@
-package com.masai.repository;
+package com.eventscheduler.repository;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.masai.model.Event;
+import com.eventscheduler.model.Event;
 
 public interface EventRepo extends JpaRepository<Event, Integer>{
 

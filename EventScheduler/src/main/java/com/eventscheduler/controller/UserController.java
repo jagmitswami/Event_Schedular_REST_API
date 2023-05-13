@@ -1,4 +1,4 @@
-package com.masai.controller;
+package com.eventscheduler.controller;
 
 import java.util.List;
 
@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.masai.exception.EventException;
-import com.masai.exception.LoginException;
-import com.masai.exception.UserException;
-import com.masai.model.Event;
-import com.masai.model.Customer;
-import com.masai.service.CustomerService;
+import com.eventscheduler.exception.EventException;
+import com.eventscheduler.exception.LoginException;
+import com.eventscheduler.exception.UserException;
+import com.eventscheduler.model.Customer;
+import com.eventscheduler.model.Event;
+import com.eventscheduler.service.CustomerService;
 
 import jakarta.validation.Valid;
 

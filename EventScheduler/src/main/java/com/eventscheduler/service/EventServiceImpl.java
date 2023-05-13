@@ -1,4 +1,4 @@
-package com.masai.service;
+package com.eventscheduler.service;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -8,13 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
-import com.masai.exception.EventException;
-import com.masai.exception.UserException;
-import com.masai.model.Customer;
-import com.masai.model.Event;
-import com.masai.model.EventType;
-import com.masai.repository.EventRepo;
-import com.masai.repository.UserRepo;
+import com.eventscheduler.exception.EventException;
+import com.eventscheduler.exception.UserException;
+import com.eventscheduler.model.Customer;
+import com.eventscheduler.model.Event;
+import com.eventscheduler.model.EventType;
+import com.eventscheduler.repository.EventRepo;
+import com.eventscheduler.repository.UserRepo;
 
 @Service
 public class EventServiceImpl implements EventService{

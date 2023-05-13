@@ -28,11 +28,12 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-import com.masai.exception.EventException;
-import com.masai.exception.UserException;
-import com.masai.model.Customer;
-import com.masai.model.Event;
-import com.masai.repository.UserRepo;
+import com.eventscheduler.exception.EventException;
+import com.eventscheduler.exception.UserException;
+import com.eventscheduler.model.Customer;
+import com.eventscheduler.model.Event;
+import com.eventscheduler.repository.UserRepo;
+import com.eventscheduler.service.CustomerServiceImpl;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)

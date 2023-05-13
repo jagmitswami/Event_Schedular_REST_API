@@ -1,13 +1,13 @@
-package com.masai.service;
+package com.eventscheduler.service;
 
 
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import com.masai.exception.EventException;
-import com.masai.exception.UserException;
-import com.masai.model.Event;
+import com.eventscheduler.exception.EventException;
+import com.eventscheduler.exception.UserException;
+import com.eventscheduler.model.Event;
 
 public interface EventService {
 

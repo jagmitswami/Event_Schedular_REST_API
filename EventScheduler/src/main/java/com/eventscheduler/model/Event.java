@@ -1,4 +1,4 @@
-package com.masai.model;
+package com.eventscheduler.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

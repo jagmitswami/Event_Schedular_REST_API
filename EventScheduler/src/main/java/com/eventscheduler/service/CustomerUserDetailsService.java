@@ -1,4 +1,4 @@
-package com.masai.service;
+package com.eventscheduler.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +13,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.masai.model.Customer;
-import com.masai.repository.UserRepo;
+import com.eventscheduler.model.Customer;
+import com.eventscheduler.repository.UserRepo;
 
 @Service
 public class CustomerUserDetailsService implements UserDetailsService{

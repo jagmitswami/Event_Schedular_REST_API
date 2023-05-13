@@ -1,4 +1,4 @@
-package com.masai.controller;
+package com.eventscheduler.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.masai.exception.EventException;
-import com.masai.exception.UserException;
-import com.masai.model.Event;
-import com.masai.service.EventService;
+import com.eventscheduler.exception.EventException;
+import com.eventscheduler.exception.UserException;
+import com.eventscheduler.model.Event;
+import com.eventscheduler.service.EventService;
 
 import jakarta.validation.Valid;
 

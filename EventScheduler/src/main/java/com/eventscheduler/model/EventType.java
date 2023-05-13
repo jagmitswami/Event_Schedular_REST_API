@@ -1,4 +1,4 @@
-package com.masai.model;
+package com.eventscheduler.model;
 
 public enum EventType {
 

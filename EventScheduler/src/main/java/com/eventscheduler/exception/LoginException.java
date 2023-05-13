@@ -1,4 +1,4 @@
-package com.masai.exception;
+package com.eventscheduler.exception;
 
 @SuppressWarnings("serial")
 public class LoginException extends Exception {

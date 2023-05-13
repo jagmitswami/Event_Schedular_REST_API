@@ -1,10 +1,10 @@
-package com.masai.repository;
+package com.eventscheduler.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.masai.model.Customer;
+import com.eventscheduler.model.Customer;
 
 public interface UserRepo extends JpaRepository<Customer, Integer>{
 

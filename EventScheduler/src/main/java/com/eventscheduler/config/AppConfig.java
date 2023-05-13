@@ -1,4 +1,4 @@
-package com.masai.config;
+package com.eventscheduler.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
